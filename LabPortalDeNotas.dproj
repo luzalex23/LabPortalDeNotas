@@ -129,6 +129,12 @@
         <DCCReference Include="Models\CursoModel.pas"/>
         <DCCReference Include="Models\AlunoModel.pas"/>
         <DCCReference Include="Models\NotasModel.pas"/>
+        <DCCReference Include="DAOs\AlunoDAO.pas"/>
+        <DCCReference Include="DAOs\ProfessorDAO.pas"/>
+        <DCCReference Include="DAOs\MateriaDAO.pas"/>
+        <DCCReference Include="DAOs\NotasDAO.pas"/>
+        <DCCReference Include="DAOs\CursoDAO.pas"/>
+        <DCCReference Include="DAOs\UsuarioDAO.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

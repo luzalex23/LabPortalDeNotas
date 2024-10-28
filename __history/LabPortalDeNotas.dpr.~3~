@@ -10,10 +10,10 @@ uses
   NotasModel in 'Models\NotasModel.pas',
   AlunoDAO in 'DAOs\AlunoDAO.pas',
   ProfessorDAO in 'DAOs\ProfessorDAO.pas',
+  CursoDAO in 'Models\CursoDAO.pas',
   MateriaDAO in 'DAOs\MateriaDAO.pas',
   NotasDAO in 'DAOs\NotasDAO.pas',
-  CursoDAO in 'DAOs\CursoDAO.pas',
-  UsuarioDAO in 'DAOs\UsuarioDAO.pas';
+  UsuarioDAO in 'Models\UsuarioDAO.pas';
 
 {$R *.res}
 

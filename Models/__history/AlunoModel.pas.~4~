@@ -10,6 +10,7 @@ type
     FCurso: TCurso;
   public
     property Curso: TCurso read FCurso write FCurso;
+
     constructor Create(ANome, AEmail, ASenha: string; ACurso: TCurso); overload;
   end;
 
