@@ -41,14 +41,29 @@
     <Transaction>2024/10/28 12:22:04.912,C:\Workspace\LabPortalDeNotas\DAOs\CursoDAO.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
     <Transaction>2024/10/28 12:22:26.537,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
     <Transaction>2024/10/28 12:22:42.331,C:\Workspace\LabPortalDeNotas\DAOs\UsuarioDAO.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:44:17.395,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:44:30.998,C:\Workspace\LabPortalDeNotas\Controllers\AlunoController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:46:58.083,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:48:02.452,C:\Workspace\LabPortalDeNotas\Controllers\ProfessorController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:50:34.020,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:50:50.678,C:\Workspace\LabPortalDeNotas\Controllers\CursoController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:51:45.148,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:52:04.559,C:\Workspace\LabPortalDeNotas\Controllers\MateriaController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:52:24.116,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:52:38.955,C:\Workspace\LabPortalDeNotas\NotasController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Controllers"/>
+    <File Path="Controllers\AlunoController.pas"/>
+    <File Path="Controllers\CursoController.pas"/>
+    <File Path="Controllers\MateriaController.pas"/>
+    <File Path="Controllers\ProfessorController.pas"/>
     <File Path="DAOs"/>
     <File Path="DAOs\AlunoDAO.pas"/>
-    <File Path="DAOs\ProfessorDAO.pas"/>
+    <File Path="DAOs\CursoDAO.pas"/>
     <File Path="DAOs\MateriaDAO.pas"/>
     <File Path="DAOs\NotasDAO.pas"/>
-    <File Path="DAOs\CursoDAO.pas"/>
+    <File Path="DAOs\ProfessorDAO.pas"/>
     <File Path="DAOs\UsuarioDAO.pas"/>
     <File Path="Models"/>
     <File Path="Models\AlunoModel.pas"/>
@@ -57,5 +72,6 @@
     <File Path="Models\NotasModel.pas"/>
     <File Path="Models\ProfessorModel.pas"/>
     <File Path="Models\UsuarioModel.pas"/>
+    <File Path="NotasController.pas"/>
   </ProjectSortOrder>
 </BorlandProject>

@@ -13,12 +13,7 @@ uses
   MateriaDAO in 'DAOs\MateriaDAO.pas',
   NotasDAO in 'DAOs\NotasDAO.pas',
   CursoDAO in 'DAOs\CursoDAO.pas',
-  UsuarioDAO in 'DAOs\UsuarioDAO.pas',
-  AlunoController in 'Controllers\AlunoController.pas',
-  ProfessorController in 'Controllers\ProfessorController.pas',
-  CursoController in 'Controllers\CursoController.pas',
-  MateriaController in 'Controllers\MateriaController.pas',
-  NotasController in 'NotasController.pas';
+  UsuarioDAO in 'DAOs\UsuarioDAO.pas';
 
 {$R *.res}
 

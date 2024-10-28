@@ -135,6 +135,11 @@
         <DCCReference Include="DAOs\NotasDAO.pas"/>
         <DCCReference Include="DAOs\CursoDAO.pas"/>
         <DCCReference Include="DAOs\UsuarioDAO.pas"/>
+        <DCCReference Include="Controllers\AlunoController.pas"/>
+        <DCCReference Include="Controllers\ProfessorController.pas"/>
+        <DCCReference Include="Controllers\CursoController.pas"/>
+        <DCCReference Include="Controllers\MateriaController.pas"/>
+        <DCCReference Include="NotasController.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

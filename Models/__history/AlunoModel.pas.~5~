@@ -2,7 +2,7 @@ unit AlunoModel;
 
 interface
 
-uses UsuarioModel, CursoModel, System.SysUtils;
+uses UsuarioModel, CursoModel;
 
 type
   TAluno = class(TUsuario)

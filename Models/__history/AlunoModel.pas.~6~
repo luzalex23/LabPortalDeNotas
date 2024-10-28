@@ -20,6 +20,14 @@ begin
   inherited Create(ANome, AEmail, ASenha);  // Herança de TUsuario
   FCurso := ACurso;
 end;
+procedure TAluno.Validar;
+begin
+  if Nome = '' then
+    raise Exception.Create('O nome do aluno não pode ser vazio.');
+
+  if FCurso = nil then
+    raise Exception.Create('O aluno deve estar matriculado em um curso.');
+end;
 
 end.
 
