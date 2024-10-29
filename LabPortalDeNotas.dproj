@@ -139,7 +139,12 @@
         <DCCReference Include="Controllers\ProfessorController.pas"/>
         <DCCReference Include="Controllers\CursoController.pas"/>
         <DCCReference Include="Controllers\MateriaController.pas"/>
-        <DCCReference Include="NotasController.pas"/>
+        <DCCReference Include="Controllers\NotasController.pas"/>
+        <DCCReference Include="Controllers\UsuarioController.pas"/>
+        <DCCReference Include="Views\frmMateria.pas">
+            <Form>FormMateria</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

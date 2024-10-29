@@ -3,14 +3,14 @@ unit MateriaDAO;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, FireDAC.Comp.Client, MateriaModel;
+  System.SysUtils, System.Classes, Data.DB, FireDAC.Comp.Client, MateriaModel, DBConnectionManager;
 
 type
   TMateriaDAO = class
   private
     FConnection: TFDConnection;
   public
-    constructor Create(AConnection: TFDConnection);
+    constructor Create;
     function CriarMateria(Materia: TMateria): Boolean;
     function LerMateria(Id: Integer): TMateria;
     function AtualizarMateria(Materia: TMateria): Boolean;
@@ -19,9 +19,9 @@ type
 
 implementation
 
-constructor TMateriaDAO.Create(AConnection: TFDConnection);
+constructor TMateriaDAO.Create;
 begin
-  FConnection := AConnection;
+  FConnection := TDBConnectionManager.GetConnection;
 end;
 
 function TMateriaDAO.CriarMateria(Materia: TMateria): Boolean;
@@ -31,7 +31,7 @@ begin
   Query := TFDQuery.Create(nil);
   try
     Query.Connection := FConnection;
-    Query.SQL.Text := 'EXEC CriarMateria :Nome';
+    Query.SQL.Text := 'INSERT INTO Materia (Nome) VALUES (:Nome)';
     Query.ParamByName('Nome').AsString := Materia.Nome;
     Query.ExecSQL;
     Result := True;
@@ -48,7 +48,7 @@ begin
   Query := TFDQuery.Create(nil);
   try
     Query.Connection := FConnection;
-    Query.SQL.Text := 'EXEC LerMateria :Id';
+    Query.SQL.Text := 'SELECT * FROM Materia WHERE ID = :Id';
     Query.ParamByName('Id').AsInteger := Id;
     Query.Open;
     if not Query.IsEmpty then
@@ -70,7 +70,7 @@ begin
   Query := TFDQuery.Create(nil);
   try
     Query.Connection := FConnection;
-    Query.SQL.Text := 'EXEC AtualizarMateria :Id, :Nome';
+    Query.SQL.Text := 'UPDATE Materia SET Nome = :Nome WHERE ID = :Id';
     Query.ParamByName('Id').AsInteger := Materia.Id;
     Query.ParamByName('Nome').AsString := Materia.Nome;
     Query.ExecSQL;
@@ -87,7 +87,7 @@ begin
   Query := TFDQuery.Create(nil);
   try
     Query.Connection := FConnection;
-    Query.SQL.Text := 'EXEC DeletarMateria :Id';
+    Query.SQL.Text := 'DELETE FROM Materia WHERE ID = :Id';
     Query.ParamByName('Id').AsInteger := Id;
     Query.ExecSQL;
     Result := True;

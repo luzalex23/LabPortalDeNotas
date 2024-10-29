@@ -18,12 +18,15 @@ uses
   ProfessorController in 'Controllers\ProfessorController.pas',
   CursoController in 'Controllers\CursoController.pas',
   MateriaController in 'Controllers\MateriaController.pas',
-  NotasController in 'NotasController.pas';
+  NotasController in 'Controllers\NotasController.pas',
+  UsuarioController in 'Controllers\UsuarioController.pas',
+  frmMateria in 'Views\frmMateria.pas' {FormMateria};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormMateria, FormMateria);
   Application.Run;
 end.

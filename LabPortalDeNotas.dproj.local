@@ -4,8 +4,8 @@
     <Transaction>2024/10/24 13:56:10.000.011,=C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/10/24 13:57:52.000.609,=C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/10/24 13:58:17.000.455,C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\LabPortalDeNotas.dproj</Transaction>
-    <Transaction>2024/10/24 13:59:52.000.224,C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Workspace\labportalnotas\PortalNotas.dfm</Transaction>
     <Transaction>2024/10/24 13:59:52.000.224,C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Workspace\labportalnotas\PortalNotas.pas</Transaction>
+    <Transaction>2024/10/24 13:59:52.000.224,C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Workspace\labportalnotas\PortalNotas.dfm</Transaction>
     <Transaction>2024/10/24 14:47:12.000.669,=C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2024/10/24 14:48:01.000.801,C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Workspace\labportalnotas\Models\uAluno.pas</Transaction>
     <Transaction>2024/10/24 17:02:46.000.374,=C:\Users\Alexsandro\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
@@ -51,6 +51,18 @@
     <Transaction>2024/10/28 12:52:04.559,C:\Workspace\LabPortalDeNotas\Controllers\MateriaController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
     <Transaction>2024/10/28 12:52:24.116,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
     <Transaction>2024/10/28 12:52:38.955,C:\Workspace\LabPortalDeNotas\NotasController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:59:28.518,C:\Workspace\LabPortalDeNotas\NotasController.pas=</Transaction>
+    <Transaction>2024/10/28 12:59:33.981,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 12:59:49.796,C:\Workspace\LabPortalDeNotas\Controllers\NotasController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:00:53.672,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:01:21.078,C:\Workspace\LabPortalDeNotas\Controllers\UsuarioController.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:39:24.107,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:42:25.650,C:\Workspace\LabPortalDeNotas\Views\frmAluno.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:42:25.650,C:\Workspace\LabPortalDeNotas\Views\frmAluno.dfm=C:\Workspace\LabPortalDeNotas\Unit1.dfm</Transaction>
+    <Transaction>2024/10/28 13:46:33.315,=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:48:15.387,C:\Workspace\LabPortalDeNotas\Views\frmMateria.pas=C:\Workspace\LabPortalDeNotas\Unit1.pas</Transaction>
+    <Transaction>2024/10/28 13:48:15.387,C:\Workspace\LabPortalDeNotas\Views\frmMateria.dfm=C:\Workspace\LabPortalDeNotas\Unit1.dfm</Transaction>
+    <Transaction>2024/10/28 15:39:00.771,C:\Workspace\LabPortalDeNotas\Views\frmAluno.pas=</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Controllers"/>
@@ -58,6 +70,8 @@
     <File Path="Controllers\CursoController.pas"/>
     <File Path="Controllers\MateriaController.pas"/>
     <File Path="Controllers\ProfessorController.pas"/>
+    <File Path="Controllers\NotasController.pas"/>
+    <File Path="Controllers\UsuarioController.pas"/>
     <File Path="DAOs"/>
     <File Path="DAOs\AlunoDAO.pas"/>
     <File Path="DAOs\CursoDAO.pas"/>
@@ -72,6 +86,8 @@
     <File Path="Models\NotasModel.pas"/>
     <File Path="Models\ProfessorModel.pas"/>
     <File Path="Models\UsuarioModel.pas"/>
-    <File Path="NotasController.pas"/>
+    <File Path="Views"/>
+    <File Path="Views\frmMateria.pas"/>
+    <File Path="Views\frmMateria.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>
