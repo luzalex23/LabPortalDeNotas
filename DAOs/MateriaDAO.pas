@@ -3,7 +3,7 @@ unit MateriaDAO;
 interface
 
 uses
-  System.SysUtils, System.Classes, Data.DB, FireDAC.Comp.Client, MateriaModel, DBConnectionManager;
+  System.SysUtils, System.Classes, Data.DB, FireDAC.Comp.Client, MateriaModel, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, DBConnectionManager;
 
 type
   TMateriaDAO = class

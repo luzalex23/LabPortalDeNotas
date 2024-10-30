@@ -66,4 +66,19 @@ object FormMateria: TFormMateria
     RowCount = 9
     TabOrder = 2
   end
+  object SQLite: TFDPhysSQLiteDriverLink
+    DriverID = 'SQLite'
+    Left = 264
+    Top = 248
+  end
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      
+        'Database=C:\Workspace\LabPortalDeNotas\Connector\labportalnotas.' +
+        'db')
+    LoginPrompt = False
+    Left = 416
+    Top = 272
+  end
 end

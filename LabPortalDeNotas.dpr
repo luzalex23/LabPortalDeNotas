@@ -20,7 +20,8 @@ uses
   MateriaController in 'Controllers\MateriaController.pas',
   NotasController in 'Controllers\NotasController.pas',
   UsuarioController in 'Controllers\UsuarioController.pas',
-  frmMateria in 'Views\frmMateria.pas' {FormMateria};
+  frmMateria in 'Views\frmMateria.pas' {FormMateria},
+  DBConnectionManager in 'Connector\DBConnectionManager.pas';
 
 {$R *.res}
 
