@@ -1,0 +1,63 @@
+unit frmMateria;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids, MateriaModel, MateriaController, MateriaDAO,
+  FireDAC.Comp.Client; // Adicione FireDAC para a conexão
+
+type
+  TFormMateria = class(TForm)
+    NameMateria: TEdit;
+    CadastrarMateriaLabel: TLabel;
+    btnCadastrar: TButton;
+    gridMaterias: TStringGrid;
+    FDConnection: TFDConnection; // Certifique-se de ter um componente TFDConnection no formulário
+    procedure btnCadastrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMateria: TFormMateria;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormMateria.btnCadastrarClick(Sender: TObject);
+var
+  Materia: TMateria;
+  Controller: TMateriaController;
+  MateriaDAO: TMateriaDAO;
+begin
+  Materia := TMateria.Create;
+  try
+    Materia.Nome := NameMateria.Text;
+
+    // Inicialize MateriaDAO com a conexão existente (FDConnection)
+    MateriaDAO := TMateriaDAO.Create(FDConnection);
+    Controller := TMateriaController.Create(MateriaDAO);
+    try
+      if Controller.CriarMateria(Materia) then
+      begin
+        ShowMessage('Matéria adicionada com sucesso.');
+        NameMateria.Clear;
+        // Chame o método para atualizar a grid, caso tenha implementado
+      end;
+    except
+      on E: Exception do
+        ShowMessage('Erro ao adicionar matéria: ' + E.Message);
+    end;
+  finally
+    Materia.Free;
+    Controller.Free;
+    MateriaDAO.Free; // Libere a instância para evitar vazamento de memória
+  end;
+end;
+
+end.
+

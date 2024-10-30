@@ -1,0 +1,63 @@
+unit frmMateria;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids, MateriaModel, MateriaController, MateriaDAO,
+  FireDAC.Comp.Client;
+
+type
+  TFormMateria = class(TForm)
+    NameMateria: TEdit;
+    CadastrarMateriaLabel: TLabel;
+    btnCadastrar: TButton;
+    gridMaterias: TStringGrid;
+
+    procedure btnCadastrarClick(Sender: TObject);
+  private
+    FDConnection: TFDConnection;
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMateria: TFormMateria;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormMateria.btnCadastrarClick(Sender: TObject);
+var
+  Materia: TMateria;
+  Controller: TMateriaController;
+  MateriaDAO: TMateriaDAO;
+begin
+  Materia := TMateria.Create;
+  try
+    Materia.Nome := NameMateria.Text;
+
+
+    MateriaDAO := TMateriaDAO.Create(FDConnection);
+    Controller := TMateriaController.Create(MateriaDAO);
+    try
+      if Controller.CriarMateria(Materia) then
+      begin
+        ShowMessage('Matéria adicionada com sucesso.');
+        NameMateria.Clear;
+
+      end;
+    except
+      on E: Exception do
+        ShowMessage('Erro ao adicionar matéria: ' + E.Message);
+    end;
+  finally
+    Materia.Free;
+    Controller.Free;
+    MateriaDAO.Free;
+  end;
+end;
+
+end.
+
